@@ -27,9 +27,48 @@
   height: 180px;
 }
 
+/* Tablet */
+@media (max-width: 1024px) {
+  .logo--small .logo__image {
+    height: 75px;
+  }
+  
+  .logo--medium .logo__image {
+    height: 100px;
+  }
+  
+  .logo--large .logo__image {
+    height: 115px;
+  }
+  
+  .logo--xlarge .logo__image {
+    height: 160px;
+  }
+}
+
+/* Mobile */
 @media (max-width: 768px) {
   .logo--small .logo__image {
-    height: 60px;
+    height: 70px;
+  }
+  
+  .logo--medium .logo__image {
+    height: 90px;
+  }
+  
+  .logo--large .logo__image {
+    height: 110px;
+  }
+  
+  .logo--xlarge .logo__image {
+    height: 140px;
+  }
+}
+
+/* Mobile pequeno */
+@media (max-width: 480px) {
+  .logo--small .logo__image {
+    height:80px;
   }
   
   .logo--medium .logo__image {
@@ -41,6 +80,6 @@
   }
   
   .logo--xlarge .logo__image {
-    height: 140px;
+    height: 120px;
   }
 }

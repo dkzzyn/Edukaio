@@ -5,7 +5,7 @@ function Hero() {
     { number: '500+', label: 'Alunos formados' },
     { number: '95%', label: 'Satisfação' },
     { number: '10+', label: 'Anos de experiência' },
-    { number: '8', label: 'Cursos disponíveis' }
+    { number: '9', label: 'Cursos disponíveis' }
   ]
 
   return (
@@ -55,24 +55,6 @@ function Hero() {
             </a>
           </div>
           
-          {/* Bloco de código visível em mobile */}
-          <div className="hero__code-block hero__code-block--mobile">
-            <div className="hero__code-header">
-              <div className="hero__code-dots">
-                <span></span><span></span><span></span>
-              </div>
-              <span className="hero__code-filename">futuro.js</span>
-            </div>
-            <pre className="hero__code-content">
-              <code>
-<span className="code-keyword">const</span> <span className="code-variable">futuro</span> = {`{`}
-  <span className="code-property">escola</span>: <span className="code-string">"Edukaio"</span>,
-  <span className="code-property">skills</span>: [<span className="code-string">"inglês"</span>, <span className="code-string">"código"</span>],
-  <span className="code-property">sucesso</span>: <span className="code-boolean">true</span>
-{`}`};
-              </code>
-            </pre>
-          </div>
         </div>
         
         <div className="hero__visual">
@@ -115,24 +97,24 @@ function Hero() {
                 <span className="hero__card-subtitle">Reconhecido pelo mercado</span>
               </div>
             </div>
-          </div>
-          
-          <div className="hero__code-block hero__code-block--desktop">
-            <div className="hero__code-header">
-              <div className="hero__code-dots">
-                <span></span><span></span><span></span>
+            
+            {/* Card de código flutuante */}
+            <div className="hero__card hero__card--code">
+              <div className="hero__code-card-header">
+                <div className="hero__code-card-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <polyline points="16 18 22 12 16 6"/>
+                    <polyline points="8 6 2 12 8 18"/>
+                  </svg>
+                </div>
+                <span className="hero__code-card-filename">futuro.js</span>
               </div>
-              <span className="hero__code-filename">futuro.js</span>
-            </div>
-            <pre className="hero__code-content">
-              <code>
-<span className="code-keyword">const</span> <span className="code-variable">futuro</span> = {`{`}
+              <pre className="hero__code-card-content"><code><span className="code-keyword">const</span> <span className="code-variable">futuro</span> = {`{`}
   <span className="code-property">escola</span>: <span className="code-string">"Edukaio"</span>,
   <span className="code-property">skills</span>: [<span className="code-string">"inglês"</span>, <span className="code-string">"código"</span>],
   <span className="code-property">sucesso</span>: <span className="code-boolean">true</span>
-{`}`};
-              </code>
-            </pre>
+{`}`};</code></pre>
+            </div>
           </div>
         </div>
       </div>

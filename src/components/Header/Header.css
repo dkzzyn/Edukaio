@@ -104,6 +104,7 @@
   gap: 5px;
   padding: 8px;
   background: transparent;
+  cursor: pointer;
 }
 
 .header__mobile-toggle span {
@@ -127,13 +128,28 @@
   transform: rotate(-45deg) translate(5px, -5px);
 }
 
+/* Tablet */
 @media (max-width: 1024px) {
   .header__nav-list {
     gap: var(--spacing-lg);
   }
+  
+  .header__cta {
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+  }
 }
 
+/* Mobile */
 @media (max-width: 768px) {
+  .header {
+    padding: var(--spacing-sm) 0;
+  }
+  
+  .header--scrolled {
+    padding: var(--spacing-xs) 0;
+  }
+
   .header__nav {
     position: fixed;
     top: 0;
@@ -142,11 +158,13 @@
     bottom: 0;
     background: var(--color-background);
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     opacity: 0;
     visibility: hidden;
     transition: all var(--transition-normal);
+    z-index: 1000;
   }
 
   .header__nav--open {
@@ -156,12 +174,14 @@
 
   .header__nav-list {
     flex-direction: column;
-    gap: var(--spacing-xl);
+    gap: var(--spacing-lg);
+    text-align: center;
   }
 
   .header__nav-link {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     font-weight: 600;
+    padding: 0.75rem 0;
   }
 
   .header__mobile-toggle {
@@ -175,9 +195,81 @@
 
   .header__theme-toggle {
     z-index: 1001;
+    width: 38px;
+    height: 38px;
+  }
+  
+  .header__theme-toggle svg {
+    width: 18px;
+    height: 18px;
+  }
+  
+  .header__logo .logo__image {
+    height: 75px !important;
+  }
+  
+  .header--scrolled .logo__image {
+    height: 60px !important;
+  }
+  
+  .header__actions {
+    gap: var(--spacing-xs);
+  }
+}
+
+/* Mobile pequeno */
+@media (max-width: 480px) {
+  .header__logo .logo__image {
+    height: 70px !important;
+  }
+  
+  .header--scrolled .logo__image {
+    height: 55px !important;
+  }
+  
+  .header__theme-toggle {
+    width: 34px;
+    height: 34px;
+  }
+  
+  .header__theme-toggle svg {
+    width: 16px;
+    height: 16px;
+  }
+  
+  .header__mobile-toggle {
+    padding: 5px;
+  }
+  
+  .header__mobile-toggle span {
+    width: 20px;
+  }
+  
+  .header__nav-link {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 380px) {
+  .header__logo .logo__image {
+    height: 60px !important;
   }
   
   .header--scrolled .logo__image {
     height: 50px !important;
+  }
+  
+  .header__theme-toggle {
+    width: 32px;
+    height: 32px;
+  }
+  
+  .header__theme-toggle svg {
+    width: 14px;
+    height: 14px;
+  }
+  
+  .header__mobile-toggle span {
+    width: 18px;
   }
 }
