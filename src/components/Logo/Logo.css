@@ -1,0 +1,46 @@
+.logo {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.logo__image {
+  object-fit: contain;
+  max-width: 100%;
+  transition: height 0.3s ease;
+}
+
+.logo--small .logo__image {
+  height: 85px;
+}
+
+.logo--medium .logo__image {
+  height: 115px;
+}
+
+.logo--large .logo__image {
+  height: 130px;
+}
+
+.logo--xlarge .logo__image {
+  height: 180px;
+}
+
+@media (max-width: 768px) {
+  .logo--small .logo__image {
+    height: 60px;
+  }
+  
+  .logo--medium .logo__image {
+    height: 80px;
+  }
+  
+  .logo--large .logo__image {
+    height: 100px;
+  }
+  
+  .logo--xlarge .logo__image {
+    height: 140px;
+  }
+}

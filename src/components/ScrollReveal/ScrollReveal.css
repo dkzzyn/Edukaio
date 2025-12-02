@@ -1,0 +1,94 @@
+.scroll-reveal {
+  transition-property: opacity, transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Fade Up */
+.scroll-reveal--fade-up {
+  opacity: 0;
+  transform: translateY(40px);
+}
+
+.scroll-reveal--fade-up.scroll-reveal--visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Fade Down */
+.scroll-reveal--fade-down {
+  opacity: 0;
+  transform: translateY(-40px);
+}
+
+.scroll-reveal--fade-down.scroll-reveal--visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Fade Left */
+.scroll-reveal--fade-left {
+  opacity: 0;
+  transform: translateX(-40px);
+}
+
+.scroll-reveal--fade-left.scroll-reveal--visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Fade Right */
+.scroll-reveal--fade-right {
+  opacity: 0;
+  transform: translateX(40px);
+}
+
+.scroll-reveal--fade-right.scroll-reveal--visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Zoom In */
+.scroll-reveal--zoom-in {
+  opacity: 0;
+  transform: scale(0.8);
+}
+
+.scroll-reveal--zoom-in.scroll-reveal--visible {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Zoom Out */
+.scroll-reveal--zoom-out {
+  opacity: 0;
+  transform: scale(1.2);
+}
+
+.scroll-reveal--zoom-out.scroll-reveal--visible {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Flip */
+.scroll-reveal--flip {
+  opacity: 0;
+  transform: perspective(400px) rotateX(20deg);
+}
+
+.scroll-reveal--flip.scroll-reveal--visible {
+  opacity: 1;
+  transform: perspective(400px) rotateX(0);
+}
+
+/* Fade */
+.scroll-reveal--fade {
+  opacity: 0;
+}
+
+.scroll-reveal--fade.scroll-reveal--visible {
+  opacity: 1;
+}
+
+
+
+

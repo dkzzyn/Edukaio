@@ -1,0 +1,232 @@
+.cta {
+  position: relative;
+  overflow: hidden;
+}
+
+.cta__bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.cta__bg-gradient {
+  position: absolute;
+  inset: 0;
+  background: 
+    radial-gradient(ellipse 80% 60% at 20% 40%, rgba(46, 42, 126, 0.12), transparent 60%),
+    radial-gradient(ellipse 60% 50% at 80% 60%, rgba(227, 30, 36, 0.08), transparent 50%);
+}
+
+.cta__bg-orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(120px);
+}
+
+.cta__bg-orb--1 {
+  width: 600px;
+  height: 600px;
+  background: rgba(46, 42, 126, 0.15);
+  top: -30%;
+  left: -15%;
+  animation: float 10s ease-in-out infinite;
+}
+
+.cta__bg-orb--2 {
+  width: 500px;
+  height: 500px;
+  background: rgba(227, 30, 36, 0.1);
+  bottom: -30%;
+  right: -15%;
+  animation: float 12s ease-in-out infinite reverse;
+}
+
+.cta .container {
+  position: relative;
+  z-index: 1;
+}
+
+.cta__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-3xl);
+  align-items: center;
+}
+
+.cta__content {
+  animation: slideInLeft 0.8s ease forwards;
+}
+
+.cta__label {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  padding: 0.5rem 1rem;
+  background: rgba(46, 42, 126, 0.1);
+  border: 1px solid rgba(46, 42, 126, 0.2);
+  border-radius: var(--border-radius-full);
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--color-primary);
+  margin-bottom: var(--spacing-lg);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.cta__title {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 800;
+  line-height: 1.15;
+  margin-bottom: var(--spacing-lg);
+  color: var(--color-text);
+}
+
+.cta__title-highlight {
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.cta__description {
+  font-size: 1.125rem;
+  color: var(--color-text-muted);
+  margin-bottom: var(--spacing-xl);
+  line-height: 1.7;
+}
+
+.cta__benefits {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.cta__benefit {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  color: var(--color-text);
+  font-size: 1rem;
+}
+
+.cta__benefit svg {
+  color: var(--color-success);
+  flex-shrink: 0;
+}
+
+.cta__form {
+  padding: var(--spacing-2xl);
+  background: var(--gradient-card);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--border-radius-2xl);
+  box-shadow: var(--shadow-xl);
+}
+
+.cta__form-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-text);
+  margin-bottom: var(--spacing-lg);
+  text-align: center;
+}
+
+.cta__form-group {
+  margin-bottom: var(--spacing-md);
+}
+
+.cta__form-group label {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: var(--spacing-xs);
+}
+
+.cta__form-group input,
+.cta__form-group select {
+  width: 100%;
+  padding: 1rem 1.25rem;
+  background: var(--color-background);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius-lg);
+  color: var(--color-text);
+  font-size: 1rem;
+  font-family: inherit;
+  transition: all var(--transition-fast);
+}
+
+.cta__form-group input::placeholder {
+  color: var(--color-text-muted);
+}
+
+.cta__form-group input:focus,
+.cta__form-group select:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 4px rgba(46, 42, 126, 0.1);
+}
+
+.cta__form-group select {
+  cursor: pointer;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%235C5C7A' stroke-width='2'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  background-size: 1.25rem;
+}
+
+.cta__form-group select option {
+  background: var(--color-background-card);
+  color: var(--color-text);
+}
+
+.cta__form-btn {
+  width: 100%;
+  margin-top: var(--spacing-md);
+  padding: 1.1rem;
+  font-size: 1.05rem;
+}
+
+.cta__form-disclaimer {
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+  text-align: center;
+  margin-top: var(--spacing-md);
+}
+
+@media (max-width: 1024px) {
+  .cta__container {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-2xl);
+  }
+
+  .cta__content {
+    text-align: center;
+  }
+
+  .cta__label {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .cta__benefits {
+    align-items: center;
+  }
+
+  .cta__form {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 640px) {
+  .cta__form {
+    padding: var(--spacing-lg);
+  }
+
+  .cta__form-group input,
+  .cta__form-group select {
+    padding: 0.875rem 1rem;
+  }
+}
