@@ -23,7 +23,7 @@ function Hero() {
         <div className="hero__content">
           <div className="hero__badge">
             <span className="hero__badge-dot"></span>
-            <span>Matrículas Abertas 2025</span>
+            <span>Matrículas Abertas 2026</span>
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
               <path d="M5 12h14M12 5l7 7-7 7"/>
             </svg>

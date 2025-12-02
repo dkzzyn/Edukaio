@@ -7,6 +7,7 @@ import VideoTestimonials from './components/VideoTestimonials/VideoTestimonials'
 import Testimonials from './components/Testimonials/Testimonials'
 import CTA from './components/CTA/CTA'
 import Footer from './components/Footer/Footer'
+import WhatsAppButton from './components/WhatsAppButton/WhatsAppButton'
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <CTA />
         </main>
         <Footer />
+        <WhatsAppButton />
       </div>
     </ThemeProvider>
   )

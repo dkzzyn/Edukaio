@@ -115,6 +115,18 @@
   transition: all var(--transition-normal);
 }
 
+/* Badge no modo dark - cores mais visíveis */
+[data-theme="dark"] .hero__badge {
+  background: rgba(139, 92, 246, 0.15);
+  border: 1px solid rgba(139, 92, 246, 0.4);
+  color: #C4B5FD;
+}
+
+[data-theme="dark"] .hero__badge:hover {
+  background: rgba(139, 92, 246, 0.25);
+  border-color: #A78BFA;
+}
+
 .hero__badge:hover {
   background: rgba(46, 42, 126, 0.12);
   border-color: var(--color-primary);
