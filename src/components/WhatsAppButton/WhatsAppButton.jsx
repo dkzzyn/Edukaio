@@ -8,7 +8,7 @@ function WhatsAppButton() {
   const message = encodeURIComponent('Olá! Gostaria de saber mais sobre os cursos da Edukaio.')
   
   // URL do WhatsApp
-  const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${message}`
+  const whatsappUrl = `https://api.whatsapp.com/send?phone=5511960948551`
 
   const handleClick = () => {
     window.open(whatsappUrl, '_blank')
