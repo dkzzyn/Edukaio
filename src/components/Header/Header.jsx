@@ -18,6 +18,7 @@ function Header() {
 
   const navLinks = [
     { name: 'Início', href: '#hero' },
+    { name: 'Sobre', href: '#about' },
     { name: 'Cursos', href: '#courses' },
     { name: 'Diferenciais', href: '#features' },
     { name: 'Depoimentos', href: '#testimonials' },

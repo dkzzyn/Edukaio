@@ -1,6 +1,7 @@
 import { ThemeProvider } from './context/ThemeContext'
 import Header from './components/Header/Header'
 import Hero from './components/Hero/Hero'
+import About from './components/About/About'
 import Features from './components/Features/Features'
 import Courses from './components/Courses/Courses'
 import VideoTestimonials from './components/VideoTestimonials/VideoTestimonials'
@@ -16,6 +17,7 @@ function App() {
         <Header />
         <main>
           <Hero />
+          <About />
           <Features />
           <Courses />
           <VideoTestimonials />
