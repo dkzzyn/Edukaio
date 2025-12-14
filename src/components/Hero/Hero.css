@@ -262,12 +262,12 @@
 
 .hero__card-icon--blue {
   background: linear-gradient(135deg, rgba(46, 42, 126, 0.2) 0%, rgba(46, 42, 126, 0.1) 100%);
-  color: var(--color-primary);
+  color: var(--color-white);
 }
 
 .hero__card-icon--red {
   background: linear-gradient(135deg, rgba(227, 30, 36, 0.15) 0%, rgba(227, 30, 36, 0.08) 100%);
-  color: var(--color-secondary);
+  color: var(--color-white);
 }
 
 .hero__card-icon--gradient {

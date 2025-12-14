@@ -60,7 +60,7 @@ function Hero() {
         <div className="hero__visual">
           <div className="hero__cards-container">
             <div className="hero__card hero__card--1">
-              <div className="hero__card-icon hero__card-icon--blue">
+              <div className="hero__card-icon hero__card-icon--gradient">
                 <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                   <polyline points="16 18 22 12 16 6"/>
                   <polyline points="8 6 2 12 8 18"/>
@@ -73,7 +73,7 @@ function Hero() {
             </div>
             
             <div className="hero__card hero__card--2">
-              <div className="hero__card-icon hero__card-icon--red">
+              <div className="hero__card-icon hero__card-icon--gradient">
                 <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                   <circle cx="12" cy="12" r="10"/>
                   <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
