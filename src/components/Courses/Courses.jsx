@@ -4,10 +4,10 @@ import './Courses.css'
 function Courses() {
   const courses = [
     {
-      title: 'Inglês Básico',
-      duration: '6 meses',
+      title: 'Inglês Básico - Avançado',
+      duration: '20 meses',
       description: 'Fundamentos do idioma, vocabulário essencial e conversação básica.',
-      level: 'iniciante',
+      level: 'E ssencial',
       icon: (
         <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
           <circle cx="12" cy="12" r="10"/>
@@ -17,8 +17,8 @@ function Courses() {
       color: 'red'
     },
     {
-      title: 'Inglês Intermediário',
-      duration: '6 meses',
+      title: 'Pacote Office',
+      duration: '20 meses',
       description: 'Gramática avançada, fluência na conversação e compreensão de textos.',
       level: 'intermediário',
       icon: (
@@ -27,11 +27,11 @@ function Courses() {
           <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
         </svg>
       ),
-      color: 'red'
+      color: 'green'
     },
     {
-      title: 'Inglês Avançado',
-      duration: '6 meses',
+      title: 'ADM ',
+      duration: '20 meses',
       description: 'Domínio completo, business english e preparação para certificações.',
       level: 'avançado',
       icon: (
@@ -43,8 +43,8 @@ function Courses() {
       color: 'red'
     },
     {
-      title: 'Inglês para Kids',
-      duration: '12 meses',
+      title: 'Hardware',
+      duration: '20 meses',
       description: 'Aprendizado lúdico e divertido para crianças de 6 a 12 anos.',
       level: 'iniciante',
       icon: (
@@ -58,7 +58,7 @@ function Courses() {
       color: 'red'
     },
     {
-      title: 'Informática Básica',
+      title: 'Informática Básica - Avançado',
       duration: '3 meses',
       description: 'Windows, Word, Excel, PowerPoint e navegação na internet.',
       level: 'iniciante',

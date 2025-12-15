@@ -2,9 +2,9 @@ import './Hero.css'
 
 function Hero() {
   const stats = [
-    { number: '500+', label: 'Alunos formados' },
+    { number: '5000+', label: 'Alunos formados' },
     { number: '95%', label: 'Satisfação' },
-    { number: '10+', label: 'Anos de experiência' },
+    { number: '15+', label: 'Anos de experiência' },
     { number: '9', label: 'Cursos disponíveis' }
   ]
 

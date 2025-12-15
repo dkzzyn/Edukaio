@@ -46,7 +46,7 @@ function Features() {
         </svg>
       ),
       title: 'Horários Flexíveis',
-      description: 'Aulas nos períodos manhã, tarde e noite.',
+      description: 'Aulas nos períodos manhã e tarde .',
       color: 'blue'
     },
     {
